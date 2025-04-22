@@ -8,9 +8,6 @@ export default function Home() {
         <HPList />
       </main>
 
-      <footer className={styles.footer}>
-        <p>Desenvolvido durante o curso de Desenvolvimento de Sistemas</p>
-      </footer>
     </div>
   );
 }

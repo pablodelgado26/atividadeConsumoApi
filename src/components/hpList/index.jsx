@@ -3,6 +3,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styles from "./hpList.module.css";
+import Loading from "../loading";
 
 const HPList = () => {
   const url = "https://hp-api.onrender.com/api/characters"; // API URL
@@ -30,7 +31,7 @@ const HPList = () => {
   if (loading) {
     return (
       <div className={styles.loading}>
-        Carregando personagens...
+        <Loading />
       </div>
     );
   }
